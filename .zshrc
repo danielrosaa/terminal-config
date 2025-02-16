@@ -145,4 +145,5 @@ danie='/mnt/c/Users/danie'
 
 # Custom Aliases
 alias python=python3
+alias vim="gvim -v"
 

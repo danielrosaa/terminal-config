@@ -5,3 +5,6 @@ set tabstop=4		    " Set tab width to 4 spaces
 set shiftwidth=4	    " Set indentation width to 4 spaces
 set expandtab		    " Uses spaces instead if tabs
 set cursorline		    " Highlight the current line
+
+"  Sync clipboard with OS
+set clipboard=unnamedplus

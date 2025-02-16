@@ -115,12 +115,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
+alias zshconfig="vim ~/.dotfiles/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Git Aliases
 # .git-completion.bash: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-location="~/.utils/git-completion.bash"
+location="~/.dotfiles/.utils/git-completion.bash"
 if [ -f $location ]; then . $location
     __git_complete gpull _git_pull
     __git_complete gpush _git_push

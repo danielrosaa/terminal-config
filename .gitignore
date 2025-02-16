@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!.tmux.conf
+!.vimrc
+!.zshrc
+
+!.ultils/
+
+

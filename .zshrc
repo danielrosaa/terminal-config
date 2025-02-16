@@ -3,7 +3,7 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export ZSH_TMUX_CONFIG="$HOME/.dotfiles/.tmux.conf"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -72,7 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-    nvm
+    	nvm
 	zsh-autosuggestions
 	themes
 	docker
@@ -116,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="vim ~/.dotfiles/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Git Aliases
 # .git-completion.bash: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
@@ -143,3 +143,4 @@ danie='/mnt/c/Users/danie'
 
 # Custom Aliases
 alias python=python3
+

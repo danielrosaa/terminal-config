@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_TMUX_CONFIG="$HOME/.dotfiles/.tmux.conf"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export VIMINIT="source $HOME/.dotfiles/.vimrc"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

@@ -13,3 +13,8 @@ set clipboard=unnamedplus
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+if has('nvim')
+    source ~/.config/nvim/init.lua
+    finish
+endif

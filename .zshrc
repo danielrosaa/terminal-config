@@ -1,6 +1,14 @@
-# If you come from bash you might have to change your $PATH.
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# If you come from bash you might have to change your $PATH.
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_TMUX_CONFIG="$HOME/.dotfiles/.tmux.conf"
@@ -117,12 +125,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.dotfiles/.zshrc"
+alias zshconfig="nvim ~/.dotfiles/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Git Aliases
 # .git-completion.bash: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-location="~/.dotfiles/.utils/git-completion.bash"
+location="~/.dotfiles/utils/git-completion.bash"
 if [ -f $location ]; then . $location
     __git_complete gpull _git_pull
     __git_complete gpush _git_push
@@ -139,12 +147,12 @@ alias gm="git merge"
 alias gdiff="git diff"
 alias glog="git log --oneline"
 
-# Custom Variables
+# Custom Variables for WSL on Windows
 win='/mnt/c'
 danie='/mnt/c/Users/danie'
 
 # Custom Aliases
-alias python=python3
+# alias python=python3
 alias vim="gvim -v"
 alias sshtowsl='ssh daniel@danpc.local -p 2022'
 alias sshtowin='ssh danie@danpc.local'

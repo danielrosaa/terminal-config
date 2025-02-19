@@ -8,7 +8,6 @@ set cursorline		    " Highlight the current line
 
 " Sync clipboard with OS
 set clipboard=unnamedplus
-
 " Set vim backup location files
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//

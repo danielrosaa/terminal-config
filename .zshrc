@@ -146,4 +146,7 @@ danie='/mnt/c/Users/danie'
 # Custom Aliases
 alias python=python3
 alias vim="gvim -v"
+alias sshtowsl='ssh daniel@danpc.local -p 2022'
+alias sshtowin='ssh danie@danpc.local'
+
 

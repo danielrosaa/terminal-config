@@ -36,5 +36,8 @@ echo "Creating symlinks..."
 ln -sf "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
 echo "  ~/.zshrc -> $SCRIPT_DIR/.zshrc"
 
+ln -sf "$SCRIPT_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+echo "  ~/.p10k.zsh -> $SCRIPT_DIR/.p10k.zsh"
+
 echo -e "\n------====== Zsh installed ======------"
 echo "Restart your terminal or run 'source ~/.zshrc' to apply changes."

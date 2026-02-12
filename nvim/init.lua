@@ -11,7 +11,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup {
+require('lazy').setup({
   require 'plugins.neo-tree',
   require 'plugins.themes.nord',
   require 'plugins.bufferline',
@@ -25,4 +25,6 @@ require('lazy').setup {
   require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
-}
+}, {
+  rocks = { enabled = false },
+})

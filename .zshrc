@@ -150,14 +150,3 @@ alias gm="git merge"
 alias gdiff="git diff"
 alias glog="git log --oneline"
 
-# Custom Variables for WSL on Windows
-win='/mnt/c'
-danie='/mnt/c/Users/danie'
-
-# Custom Aliases
-# alias python=python3
-alias vim="gvim -v"
-alias sshtowsl='ssh daniel@danpc.local -p 2022'
-alias sshtowin='ssh danie@danpc.local'
-
-

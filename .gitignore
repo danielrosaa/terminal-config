@@ -1,2 +1,5 @@
 # oh-my-zsh is cloned at install time, not versioned
 zsh/.oh-my-zsh/
+
+# tmux plugins are installed by TPM at install time, not versioned
+tmux/plugins/

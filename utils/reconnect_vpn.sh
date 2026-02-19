@@ -1,0 +1,1 @@
+nordvpn d && nordvpn c

@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="sound", KERNEL=="card*", ATTRS{idVendor}=="3206", ATTRS{idProduct}=="0881", RUN+="/usr/bin/amixer -c %n sset PCM 100%%"

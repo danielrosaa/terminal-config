@@ -25,10 +25,24 @@ Disables all ACPI wakeup sources listed as enabled in `/proc/acpi/wakeup`.
 Useful to prevent the computer from waking up from sleep due to USB devices,
 network adapters, or other peripherals.
 
-To install as a systemd service so it runs on every boot:
+To have the command available system wide:
 ```bash
 sudo cp disable-wakeup.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/disable-wakeup.sh
+```
+
+---
+
+### `disable-wakeup.service`
+Service to persist disable-wakeup after reboots.
+
+To install as a systemd service so it runs on every boot:
+```bash
+sudo cp disable-wakeup.service /etc/systemd/system/                                                              
+sudo systemctl daemon-reload                                                                                   
+sudo systemctl enable disable-wakeup.service                                                                                         
+sudo systemctl start disable-wakeup.service                                                                      
+sudo systemctl status disable-wakeup.service 
 ```
 
 ---
